@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap");
 
 
 *,
@@ -157,18 +157,15 @@ a {
 
   z-index: 1;
 
-  display: grid;
-
-  grid-template-columns:
-    minmax(170px, 260px)
-    minmax(0, 1fr);
+  display: flex;
 
   align-items: center;
+  justify-content: center;
 
   gap: clamp(
-    38px,
-    6vw,
-    90px
+    12px,
+    4vw,
+    40px
   );
 }
 
@@ -176,17 +173,20 @@ a {
 .application-hero__logo-wrap {
   display: flex;
 
+  flex: none;
+
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 
 .application-hero__logo {
   display: block;
 
-  width: min(
-    100%,
-    250px
+  width: clamp(
+    36px,
+    9vw,
+    120px
   );
 
   height: auto;
@@ -195,12 +195,6 @@ a {
 }
 
 
-.application-hero__copy {
-  max-width: 820px;
-}
-
-
-.application-hero__label,
 .electronic-application__label {
   margin:
     0
@@ -225,9 +219,9 @@ a {
 
 
 .application-hero h1 {
-  max-width: 850px;
-
   margin: 0;
+
+  white-space: nowrap;
 
   font-family:
     "Oswald",
@@ -236,44 +230,34 @@ a {
 
   font-size:
     clamp(
-      37px,
-      4.2vw,
-      64px
+      22px,
+      6.2vw,
+      100px
     );
 
-  font-weight: 500;
+  font-weight: 700;
 
-  line-height: 1.05;
+  line-height: 1;
 
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
+
+  text-transform: uppercase;
 }
 
 
-.application-hero__intro {
-  max-width: 690px;
-
-  margin:
-    24px
-    0
-    0;
-
-  color:
-    rgba(
-      255,
-      255,
-      255,
-      0.78
-    );
-
-  font-size:
-    clamp(
-      14px,
-      1.05vw,
-      17px
-    );
-
-  line-height: 1.75;
+.hero-title__solid {
+  color: #ffffff;
 }
+
+
+.hero-title__outline {
+  color: #ffffff;
+
+  -webkit-text-stroke: 1.5px #ffffff;
+  -webkit-text-fill-color: transparent;
+}
+
+
 
 
 /* =========================================================
@@ -289,7 +273,12 @@ a {
 
 
 .application-copy {
-  font-size: 16px;
+  font-size:
+    clamp(
+      14px,
+      1.3vw,
+      16px
+    );
 
   line-height: 1.85;
 }
@@ -391,6 +380,13 @@ a {
 .process-list {
   position: relative;
 
+  --step-size:
+    clamp(
+      38px,
+      5vw,
+      46px
+    );
+
   display: grid;
 
   gap: 0;
@@ -404,7 +400,7 @@ a {
 
   top: 26px;
   bottom: 26px;
-  left: 22px;
+  left: calc(var(--step-size) / 2);
 
   width: 1px;
 
@@ -418,12 +414,22 @@ a {
   display: grid;
 
   grid-template-columns:
-    46px
+    var(--step-size)
     minmax(0, 1fr);
 
-  gap: 25px;
+  gap:
+    clamp(
+      16px,
+      2.4vw,
+      25px
+    );
 
-  padding-bottom: 42px;
+  padding-bottom:
+    clamp(
+      30px,
+      4vw,
+      42px
+    );
 }
 
 
@@ -442,8 +448,8 @@ a {
   align-items: center;
   justify-content: center;
 
-  width: 46px;
-  height: 46px;
+  width: var(--step-size);
+  height: var(--step-size);
 
   border: 1px solid #ccd5e4;
 
@@ -458,7 +464,12 @@ a {
     Arial,
     sans-serif;
 
-  font-size: 18px;
+  font-size:
+    clamp(
+      15px,
+      1.6vw,
+      18px
+    );
 
   font-weight: 500;
 }
@@ -482,7 +493,12 @@ a {
     Arial,
     sans-serif;
 
-  font-size: 21px;
+  font-size:
+    clamp(
+      19px,
+      1.6vw,
+      21px
+    );
 
   font-weight: 500;
 }
@@ -924,17 +940,6 @@ a {
   }
 
 
-  .application-hero
-    .application-shell {
-
-    grid-template-columns:
-      190px
-      minmax(0, 1fr);
-
-    gap: 45px;
-  }
-
-
   .application-content {
     padding:
       70px
@@ -974,24 +979,25 @@ a {
   .application-hero
     .application-shell {
 
-    grid-template-columns: 1fr;
-
-    gap: 28px;
-  }
-
-
-  .application-hero__logo {
-    width: 160px;
+    flex-direction: column;
   }
 
 
   .application-hero h1 {
+    max-width: 92vw;
+
+    white-space: normal;
+
+    text-align: center;
+
     font-size:
       clamp(
         34px,
-        10vw,
-        48px
+        11vw,
+        56px
       );
+
+    line-height: 1.05;
   }
 
 
@@ -1004,8 +1010,6 @@ a {
 
 
   .application-copy {
-    font-size: 14px;
-
     line-height: 1.8;
   }
 
@@ -1015,40 +1019,6 @@ a {
   .contact-section,
   .committee-section {
     margin-top: 55px;
-  }
-
-
-  .process-step {
-    grid-template-columns:
-      40px
-      minmax(0, 1fr);
-
-    gap: 17px;
-
-    padding-bottom: 34px;
-  }
-
-
-  .process-list::before {
-    left: 19px;
-  }
-
-
-  .process-step__number {
-    width: 40px;
-    height: 40px;
-
-    font-size: 16px;
-  }
-
-
-  .process-step__body {
-    padding-top: 4px;
-  }
-
-
-  .process-step__body h3 {
-    font-size: 19px;
   }
 
 
@@ -1119,14 +1089,8 @@ a {
   }
 
 
-  .application-hero__label,
   .electronic-application__label {
     font-size: 12px;
-  }
-
-
-  .application-hero__intro {
-    font-size: 13px;
   }
 
 

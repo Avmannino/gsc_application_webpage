@@ -193,26 +193,14 @@ function App() {
             />
           </div>
 
-          <div className="application-hero__copy">
-
-            <p className="application-hero__label">
+          <h1>
+            <span className="hero-title__outline">
               Membership
-            </p>
-
-            <h1>
-              Admissions Procedures for
-              Application to the
-              Greenwich Skating Club
-            </h1>
-
-            <p className="application-hero__intro">
-              Information for candidates and
-              sponsoring Full Members regarding
-              the Greenwich Skating Club
-              membership application process.
-            </p>
-
-          </div>
+            </span>{" "}
+            <span className="hero-title__solid">
+              At GSC
+            </span>
+          </h1>
 
         </div>
 
@@ -224,6 +212,18 @@ function App() {
         <div className="application-shell application-shell--content">
 
           <article className="application-copy">
+
+            <div className="section-heading">
+
+              <span className="section-heading__line" />
+
+              <h2>
+                Admissions Procedures for
+                Application to the
+                Greenwich Skating Club
+              </h2>
+
+            </div>
 
             <p>
               The Greenwich Skating Club has a
