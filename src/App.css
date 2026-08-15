@@ -735,6 +735,9 @@ a {
   max-width: 800px;
 
   margin-bottom: 38px;
+  margin-inline: auto;
+
+  text-align: center;
 }
 
 
@@ -1041,7 +1044,6 @@ a {
   }
 
 
-  .electronic-application__heading,
   .application-privacy,
   .application-placeholder__content {
     text-align: center;
@@ -1359,9 +1361,9 @@ a {
 
   width:
     clamp(
-      132px,
-      10vw,
-      172px
+      110px,
+      8vw,
+      144px
     );
 
   margin-left: 20px;
@@ -1850,7 +1852,7 @@ a {
   }
 
   .footer-logo {
-    width: 138px;
+    width: 116px;
   }
 
   .footer-menu__groups {
@@ -1917,7 +1919,7 @@ a {
     position: relative;
     left: -8px;
 
-    width: 110px;
+    width: 92px;
 
     margin: 0 auto;
   }
