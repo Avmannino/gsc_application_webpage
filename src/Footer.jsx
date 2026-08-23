@@ -87,7 +87,7 @@ const exploreGroups = [
         href: `${SITE_URL}/directions`,
       },
       {
-        label: "Contact Form",
+        label: "Contact Us",
         href: `${SITE_URL}/contact`,
       },
     ],
@@ -200,7 +200,7 @@ function FooterLogo() {
       <img
         src={`${
           import.meta.env.BASE_URL
-        }gsc-logo.png`}
+        }gsc-alt-logo.png`}
         alt="Greenwich Skating Club"
       />
     </a>
@@ -334,7 +334,7 @@ function ConnectPanel() {
             <PinIcon />
 
             <span>
-              Cardinal Road · Greenwich, Connecticut
+              15 Cardinal Road · Greenwich, CT 06830
             </span>
           </a>
 

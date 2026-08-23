@@ -222,7 +222,7 @@ function App() {
 
               <h2>
                 Admissions Procedures for
-                Application to the
+                Application to
                 Greenwich Skating Club
               </h2>
 
@@ -297,10 +297,6 @@ function App() {
 
               </div>
 
-              <p className="process-section__intro">
-                Following is a description of the
-                process for admission:
-              </p>
 
               <p className="process-section__lead">
                 The Full Member proposing a
@@ -357,7 +353,8 @@ function App() {
                       className="email-link"
                       href={`mailto:${ADMISSIONS_EMAIL}`}
                     >
-                      Sarah Orum —{" "}
+                      Sarah Orum —
+                      <br />
                       {ADMISSIONS_EMAIL}
                     </a>
 
@@ -477,32 +474,6 @@ function App() {
               </p>
 
             </aside>
-
-
-            <section className="contact-section">
-
-              <div className="section-heading">
-
-                <span className="section-heading__line" />
-
-                <h2>
-                  Admissions Contact
-                </h2>
-
-              </div>
-
-              <p>
-                Please contact the Admissions
-                Chairperson, Sarah Orum at{" "}
-                <a
-                  href={`mailto:${ADMISSIONS_EMAIL}`}
-                >
-                  {ADMISSIONS_EMAIL}
-                </a>{" "}
-                if you have any questions.
-              </p>
-
-            </section>
 
 
             <section className="committee-section">

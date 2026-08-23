@@ -484,6 +484,8 @@ a {
 
 
 .process-step__body {
+  container-type: inline-size;
+
   padding-top: 7px;
 }
 
@@ -588,31 +590,6 @@ a {
 
 .application-note p:last-child {
   margin: 0;
-}
-
-
-/* =========================================================
-   CONTACT
-   ========================================================= */
-
-.contact-section {
-  margin-top: 76px;
-}
-
-
-.contact-section p {
-  margin: 0;
-}
-
-
-.contact-section a {
-  color: #102b59;
-
-  font-weight: 600;
-
-  text-decoration-color: #e51837;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
 }
 
 
@@ -987,11 +964,33 @@ a {
   }
 
 
+  .hero-title__outline {
+    font-weight: 400;
+  }
+
+
+  .application-hero__logo {
+    width:
+      clamp(
+        64px,
+        18vw,
+        100px
+      );
+  }
+
+
+  .application-hero
+    .application-shell {
+
+    flex-direction: column;
+  }
+
+
   .application-content {
     padding:
       52px
       0
-      64px;
+      32px;
   }
 
 
@@ -1016,6 +1015,11 @@ a {
   }
 
 
+  .committee-section .section-heading {
+    margin-bottom: 12px;
+  }
+
+
   .section-heading h2 {
     width: 100%;
   }
@@ -1029,7 +1033,7 @@ a {
   .process-section .section-heading {
     flex-direction: row;
 
-    justify-content: flex-start;
+    justify-content: center;
 
     gap: 15px;
   }
@@ -1037,10 +1041,28 @@ a {
 
   .process-section .section-heading h2 {
     width: auto;
+  }
 
-    flex: 1 1 auto;
 
-    min-width: 0;
+  .process-section__intro,
+  .process-section__lead {
+    text-align: center;
+  }
+
+
+  .email-link {
+    display: block;
+
+    max-width: 100%;
+
+    white-space: nowrap;
+
+    font-size:
+      clamp(
+        9px,
+        4cqw,
+        13px
+      );
   }
 
 
@@ -1052,7 +1074,6 @@ a {
 
   .process-section,
   .application-note,
-  .contact-section,
   .committee-section {
     margin-top: 55px;
   }
@@ -1077,6 +1098,13 @@ a {
   }
 
 
+  .committee-grid p {
+    padding: 9px 0;
+
+    line-height: 1;
+  }
+
+
   .committee-chair {
     justify-content: center;
   }
@@ -1096,7 +1124,7 @@ a {
 
   .electronic-application {
     padding:
-      55px
+      28px
       0
       70px;
   }
