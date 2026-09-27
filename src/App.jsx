@@ -385,56 +385,7 @@ function App() {
                       the admissions wait list based
                       on the date the completed
                       application and the proposing
-                      letter are received. Candidates
-                      are encouraged to meet two
-                      members of the Admissions
-                      Committee within 60 days of
-                      their application being
-                      received in order to remain on
-                      the Wait List. Upon receipt of
-                      the completed application
-                      package, and at the discretion
-                      of the Admissions Committee,
-                      the Candidate’s name and the
-                      name of their Sponsor may be
-                      made available to the General
-                      Membership for comment and
-                      review.
-                    </p>
-
-                  </div>
-
-                </div>
-
-
-                <div className="process-step">
-
-                  <div className="process-step__number">
-                    4
-                  </div>
-
-                  <div className="process-step__body">
-
-                    <h3>
-                      Final Approval
-                    </h3>
-
-                    <p>
-                      The Sponsor will be notified by
-                      the Admissions Committee when
-                      an opening for membership has
-                      become available and their
-                      Candidate’s application is
-                      ready to be acted upon for
-                      final approval of the Board.
-                      The Candidate may be asked to
-                      submit a follow-up
-                      questionnaire. At this time
-                      the Sponsor will be responsible
-                      for coordinating any necessary
-                      meetings of introduction with
-                      at least two members of the
-                      Board of Governors.
+                      letter are received.
                     </p>
 
                   </div>
@@ -505,10 +456,6 @@ function App() {
 
                   <p>
                     Melissa Denis
-                  </p>
-
-                  <p>
-                    Jamie Denis
                   </p>
 
                   <p>
