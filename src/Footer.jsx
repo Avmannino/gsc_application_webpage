@@ -6,7 +6,7 @@ import {
 import "./Footer.css";
 
 const SITE_BASE_URL =
-  "https://wingsarenact.wixstudio.com/gscnewsite";
+  "https://www.greenwichskatingclub.com";
 
 const MEMBER_LOGIN_URL =
   "https://www.greenwichskatingclub.org/login";
@@ -20,7 +20,7 @@ const exploreGroups = [
     links: [
       {
         label: "About GSC",
-        href: `${SITE_BASE_URL}/about-gsc`,
+        href: `${SITE_BASE_URL}/about`,
       },
       {
         label: "Club History",
