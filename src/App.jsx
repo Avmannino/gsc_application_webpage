@@ -239,22 +239,22 @@ function App() {
 
             <p>
               To seek membership, a candidate must
-              be proposed and sponsored by a Full
-              Member. Members may propose and
-              sponsor up to two Candidates for
+              be proposed and sponsored by a full
+              member. Members may propose and
+              sponsor up to two candidates for
               membership at the same time. A
-              Member may not propose an additional
-              Candidate until one or both of their
-              initial Candidates have been admitted
-              to the Club.
+              member may not propose an additional
+              candidate until one or both of their
+              initial candidates have been admitted
+              to the club.
             </p>
 
             <p>
-              The Sponsor is responsible for
-              submitting a Letter of Proposal and
+              The sponsor is responsible for
+              submitting a letter of proposal and
               the completed application form on
-              behalf of the Candidate. It is the
-              Sponsor’s responsibility to arrange
+              behalf of the candidate. It is the
+              sponsor’s responsibility to arrange
               and coordinate any meetings of
               introduction necessary for membership
               on behalf of their candidate.
@@ -299,8 +299,8 @@ function App() {
 
 
               <p className="process-section__lead">
-                The Full Member proposing a
-                Candidate should:
+                The full member proposing a
+                candidate should:
               </p>
 
 
@@ -319,8 +319,8 @@ function App() {
                     </h3>
 
                     <p>
-                      Have the Candidate complete
-                      and sign the Application Form.
+                      Have the candidate complete
+                      and sign the application form.
                     </p>
 
                   </div>
@@ -341,9 +341,9 @@ function App() {
                     </h3>
 
                     <p>
-                      Write a Letter of Proposal
+                      Write a letter of proposal
                       addressed to the Admissions
-                      Committee. The Proposer should
+                      Committee. The proposer should
                       email the completed application
                       package (completed application
                       and proposal letter) to:
@@ -360,7 +360,7 @@ function App() {
 
                     <p className="process-step__note">
                       Incomplete applications will be
-                      returned to the Proposers.
+                      returned to the proposers.
                     </p>
 
                   </div>
@@ -405,20 +405,20 @@ function App() {
 
               <p>
                 It is the responsibility of the
-                Sponsor to ensure that at least two
+                sponsor to ensure that at least two
                 Admissions Committee members and
                 two members of the Board of
                 Governors personally know the
                 candidate at the time his or her
                 application is acted upon for final
                 vote of approval by the Board. In
-                addition, Candidates are strongly
+                addition, candidates are strongly
                 encouraged to meet as many Board
                 members as possible before the Board
                 votes on their admission. As
                 outlined above, an application
                 should be submitted even if the
-                Candidate is not yet known by the
+                candidate is not yet known by the
                 requisite number of Board of
                 Governors/Admissions Committee
                 members.
